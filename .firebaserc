@@ -1,0 +1,18 @@
+{
+  "targets": {
+    "login-ng-b97ae": {
+      "hosting": {
+        "app": [
+          "login-ng-b97ae"
+        ]
+      }
+    },
+    "t-eats": {
+      "hosting": {
+        "app": [
+          "t-eats"
+        ]
+      }
+    }
+  }
+}

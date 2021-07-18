@@ -1,0 +1,393 @@
+<ion-header class="ion-no-border">
+  <ion-item lines="none">
+    <ion-buttons slot="end">
+      <ion-button routerLink="/login">Cerrar sesion</ion-button> 
+     </ion-buttons>
+    <!-- <ion-avatar slot="end">
+      <img src="assets/icon/icono.jpeg" >
+    </ion-avatar> -->
+    <ion-label>
+      <h2>T'Eats</h2>
+      <p>Teapa,Tabasco,México</p>
+    </ion-label>
+  </ion-item>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+<div class="ion-padding wrapper">
+
+  <ion-searchbar></ion-searchbar>
+
+  <ion-grid class="ion-no-padding">
+    <ion-row class="ion-align-items-baseline">
+      <ion-col size="6">
+        <h4 class="title">
+          Negocios populares
+        </h4>
+      </ion-col>
+      <ion-col size="6">
+        <h4 class="more ion-text-end">
+          Ver mas
+        </h4>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  </div>
+
+  <ion-grid class="ion-no-padding">
+    <ion-row>
+      <ion-col size="12">
+        <ion-slides [options]="options">
+
+          <ion-slide>
+            <ion-card class="card">
+              <ion-card-content class="ion-text-left">
+
+                <div class="img-wrapper" routerLink="/pedidos">
+                  <ion-img src="https://i.pinimg.com/originals/17/36/2a/17362a3a3e1a7ed6f0df8356337ee5da.jpg"></ion-img>
+                </div>
+                
+                <ion-card-title class="title">La Jungla De Las Hamburguesas</ion-card-title>
+                <ion-card-subtitle>Restaurant de hamburguesas ubicado en Avenida Plaza independencia</ion-card-subtitle>
+                <!-- <ion-card-subtitle>
+                   <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon> 
+                </ion-card-subtitle> -->
+              </ion-card-content>
+            </ion-card>
+          </ion-slide>
+
+          <ion-slide>
+            <ion-card class="card">
+              <ion-card-content class="ion-text-left">
+
+                <div class="img-wrapper">
+                  <ion-img src="https://ellugardebeatriz.com.mx/wp-content/uploads/2019/09/Sin-t%C3%ADtulo-1-4.gif"></ion-img>
+                </div>
+                
+                <ion-card-title class="title">Antojitos Pulido</ion-card-title>
+                <ion-card-subtitle>Local De Antojitos ubicado en la calle 5 de mayo,colonia centro</ion-card-subtitle>
+                <!-- <ion-card-subtitle>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-half"></ion-icon>
+                </ion-card-subtitle> -->
+              </ion-card-content>
+            </ion-card>
+          </ion-slide>
+
+          <ion-slide>
+            <ion-card class="card">
+              <ion-card-content class="ion-text-left">
+
+                <div class="img-wrapper">
+                  <ion-img src="https://pymstatic.com/30549/conversions/tipos-de-cafe-thumb.jpg"></ion-img>
+                </div> 
+                
+                <ion-card-title class="title">Cafe Anturio</ion-card-title>
+                <ion-card-subtitle>Cafeteria ubicada Plaza Independencia #173 Colonia Centro</ion-card-subtitle>
+                <!-- <ion-card-subtitle>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </ion-card-subtitle> -->
+              </ion-card-content>
+            </ion-card>
+          </ion-slide>
+
+          <!-- <ion-slide>
+            <ion-card class="card">
+              <ion-card-content class="ion-text-left">
+
+                <div class="img-wrapper">
+                  <ion-img src="https://images.pexels.com/photos/1624487/pexels-photo-1624487.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"></ion-img>
+                </div>
+                
+                <ion-card-title class="title">Some Awesome Dish Title</ion-card-title>
+                <ion-card-subtitle>Some description here</ion-card-subtitle>
+                <ion-card-subtitle>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </ion-card-subtitle>
+              </ion-card-content>
+            </ion-card>
+          </ion-slide> -->
+
+          <ion-slide>
+            <ion-card class="card">
+              <ion-card-content class="ion-text-left">
+
+                <div class="img-wrapper">
+                  <ion-img src="https://gastronomiaycia.republica.com/wp-content/uploads/2018/05/elecciones_alimentos_restaurantes.jpg"></ion-img>
+                </div>
+                
+                <ion-card-title class="title">El Antiguo Jacalito</ion-card-title>
+                <ion-card-subtitle>El restaurante mas típico de Teapa desde 1950!!!</ion-card-subtitle>
+                <!-- <ion-card-subtitle>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </ion-card-subtitle> -->
+              </ion-card-content>
+            </ion-card>
+          </ion-slide>
+
+
+          
+
+          <!-- <ion-slide>
+            <ion-card class="card">
+              <ion-card-content class="ion-text-left">
+
+                <div class="img-wrapper">
+                  <ion-img src="https://images.pexels.com/photos/361184/asparagus-steak-veal-steak-veal-361184.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"></ion-img>
+                </div>
+                
+                <ion-card-title class="title">Some Awesome Dish Title</ion-card-title>
+                <ion-card-subtitle>Some description here</ion-card-subtitle>
+                <ion-card-subtitle>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </ion-card-subtitle>
+              </ion-card-content>
+            </ion-card>
+          </ion-slide> -->
+
+        </ion-slides>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+
+  <div class="ion-padding-horizontal wrapper">
+  
+    <ion-grid class="ion-no-padding">
+      <ion-row class="ion-align-items-baseline">
+        <ion-col size="6">
+          <h4 class="title">
+            Explorar categorías
+          </h4>
+        </ion-col>
+        <ion-col size="6">
+          <h4 class="more ion-text-end">
+            Ver Mas
+          </h4>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  
+    </div>
+  
+    <ion-grid class="ion-no-padding">
+      <ion-row>
+        <ion-col size="12">
+          <ion-slides [options]="categories">
+  
+            <ion-slide>
+              <ion-card class="category" color="danger">
+                <ion-card-header class="ion-text-center">
+                  <ion-icon src= "assets/dish.svg"routerLink="/locales"></ion-icon>
+                  <ion-card-title>Antojito</ion-card-title>
+                  <ion-card-subtitle>Algo aqui</ion-card-subtitle>
+                </ion-card-header>
+              </ion-card>
+            </ion-slide>
+
+            <ion-slide>
+              <ion-card class="category" color="primary">
+                <ion-card-header class="ion-text-center">
+                  <ion-icon src="assets/cocktail.svg"></ion-icon>
+                  <ion-card-title>Bebida</ion-card-title>
+                  <ion-card-subtitle>Algo aqui</ion-card-subtitle>
+                </ion-card-header>
+              </ion-card>
+            </ion-slide>
+
+            <!-- <ion-slide>
+              <ion-card class="category" color="warning">
+                <ion-card-header class="ion-text-center">
+                  <ion-icon src="assets/burger.svg"></ion-icon>
+                  <ion-card-title>Hambur</ion-card-title>
+                  <ion-card-subtitle>Something here</ion-card-subtitle>
+                </ion-card-header>
+              </ion-card>
+            </ion-slide> -->
+
+            <ion-slide>
+              <ion-card class="category" color="success">
+                <ion-card-header class="ion-text-center">
+                  <ion-icon src="assets/pizza.svg"></ion-icon>
+                  <ion-card-title>Pizza</ion-card-title>
+                  <ion-card-subtitle>Algo Aqui</ion-card-subtitle>
+                </ion-card-header>
+              </ion-card>
+            </ion-slide>
+
+            <!-- <ion-slide>
+              <ion-card class="category" color="tertiary">
+                <ion-card-header class="ion-text-center">
+                  <ion-icon src="assets/taco.svg"></ion-icon>
+                  <ion-card-title>Mexican</ion-card-title>
+                  <ion-card-subtitle>Something here</ion-card-subtitle>
+                </ion-card-header>
+              </ion-card>
+            </ion-slide> -->
+
+            <ion-slide>
+              <ion-card class="category" color="danger">
+                <ion-card-header class="ion-text-center">
+                  <ion-icon src="assets/cookies.svg"></ion-icon>
+                  <ion-card-title>Postre</ion-card-title>
+                  <ion-card-subtitle>Algo Aqui</ion-card-subtitle>
+                </ion-card-header>
+              </ion-card>
+            </ion-slide>
+
+            <!-- <ion-slide>
+              <ion-card class="category" color="secondary">
+                <ion-card-header class="ion-text-center">
+                  <ion-icon src="assets/noodle.svg"></ion-icon>
+                  <ion-card-title>Noodle</ion-card-title>
+                  <ion-card-subtitle>Something here</ion-card-subtitle>
+                </ion-card-header>
+              </ion-card>
+            </ion-slide> -->
+
+            
+
+            
+  
+          </ion-slides>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+
+
+    <div class="ion-padding-horizontal wrapper">
+    
+      <ion-grid class="ion-no-padding">
+        <ion-row class="ion-align-items-baseline">
+          <ion-col size="6">
+            <h4 class="title">
+             Super-mercado
+            </h4>
+          </ion-col>
+          <ion-col size="6">
+            <h4 class="more ion-text-end">
+            Ver Mas
+            </h4>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    
+      </div>
+        <ion-grid class="ion-no-padding">
+        <ion-row>
+          <ion-col size="12">
+            <ion-slides [options]="options">
+    
+              <ion-slide>
+                <ion-card class="card">
+                  <ion-card-content class="ion-text-left">
+    
+                    <div class="img-wrapper">
+                      <ion-img src="data:image/png;base64,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"></ion-img>
+                    </div>
+                    
+                    <ion-card-title class="title">Chedraui</ion-card-title>
+                    <ion-card-subtitle>Grupo Comercial Chedraui, S.A.B. de C.V.,</ion-card-subtitle>
+                    <!-- <ion-card-subtitle>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </ion-card-subtitle> -->
+                  </ion-card-content>
+                </ion-card>
+              </ion-slide>
+    
+              <ion-slide>
+                <ion-card class="card">
+                  <ion-card-content class="ion-text-left">
+    
+                    <div class="img-wrapper">
+                      <ion-img src="https://liquidazona.com/wp-content/uploads/2019/12/Portada-43.png"></ion-img>
+                    </div>
+                    
+                    <ion-card-title class="title">Aurrerá</ion-card-title>
+                    <ion-card-subtitle>Bodega Aurrera tiendas de autoservicio en México</ion-card-subtitle>
+                    <!-- <ion-card-subtitle>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </ion-card-subtitle> -->
+                  </ion-card-content>
+                </ion-card>
+              </ion-slide>
+    
+              <!-- <ion-slide>
+                <ion-card class="card">
+                  <ion-card-content class="ion-text-left">
+    
+                    <div class="img-wrapper">
+                      <ion-img src="https://images.pexels.com/photos/1437629/pexels-photo-1437629.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"></ion-img>
+                    </div>
+                    
+                    <ion-card-title class="title">Some Awesome Title</ion-card-title>
+                    <ion-card-subtitle>Some description here</ion-card-subtitle>
+                    <ion-card-subtitle>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half"></ion-icon>
+                    </ion-card-subtitle>
+                  </ion-card-content>
+                </ion-card>
+              </ion-slide> -->
+    
+            </ion-slides>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    
+      <div class="ion-padding">
+        <ion-row>
+          <ion-col size="6">
+            <ion-badge color="light" class="ion-margin-end">
+             
+            </ion-badge>
+          </ion-col>
+          <ion-col size="6" class="ion-text-end">
+            <ion-badge color="light">
+             
+            </ion-badge>
+          </ion-col>
+        </ion-row>
+       
+      </div>
+<div>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4792.865114924975!2d-92.95029028762397!3d17.550447082362474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1614217885409!5m2!1ses-419!2smx" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    
+</div>
+</ion-content>

@@ -1,0 +1,58 @@
+<ion-header class="ion-no-border"> 
+  <ion-toolbar>
+    <!-- <ion-buttons slot="start">
+      <ion-button color="primary">
+         <ion-icon slot="icon-only" name="arrow-back"></ion-icon> 
+      </ion-button>
+    </ion-buttons> -->
+    <ion-buttons slot="end">
+      <ion-button routerLink="/register">Crear usuario</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header> 
+
+<ion-content>
+  <div id="header">
+    <h1>T'Eats</h1>
+    <!-- <img src="assets/icono.jpeg" /> -->
+  </div>
+  <form id="header">
+    <ion-item lines="full">
+      <ion-label position="floating">Email</ion-label>
+      <ion-input type="text" #email required></ion-input>
+    </ion-item>
+    <br>
+    <ion-item lines="full">
+      <ion-label position="floating">Password</ion-label>
+      <ion-input type="password" #password required></ion-input>
+    </ion-item>
+    <ion-row>
+      <ion-col>
+        <ion-button type="submit" (click)="onLogin(email, password)" expand="block" >Login</ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <p class="ion-text-end">
+          <a routerLink="/forgot-password" style="color: black;">¿Has olvidado la contraseña? </a>
+        </p>
+      </ion-col>
+    </ion-row>
+    <span class="center-span">  </span>
+    <ion-row>
+      <ion-col size="15">
+        <ion-button type="submit" color="danger" (click)="onLoginGoogle()" expand="block"
+          > <ion-icon name="logo-google"></ion-icon>
+        </ion-button>
+      </ion-col>
+       <ion-col size="15"> 
+        <ion-button class="facebook" type="submit"  (click)="onLoginFacebook()" expand="block">
+          <ion-icon name="logo-facebook"></ion-icon>
+          
+        </ion-button>
+      </ion-col> 
+    </ion-row>
+    
+  </form>
+  
+</ion-content>
